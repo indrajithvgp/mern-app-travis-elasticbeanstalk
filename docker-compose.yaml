@@ -3,7 +3,7 @@ services:
     frontend: 
         build: 
             context: .
-            dockerfile: Dockerfile.dev
+            dockerfile: Dockerfile
         volumes: 
             - /app/node_modules
             - .:/app
