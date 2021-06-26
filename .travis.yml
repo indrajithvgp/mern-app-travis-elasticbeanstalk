@@ -6,8 +6,8 @@ services:
 before_install:
   - docker build -t indrajithvgp/react-nginx -f Dockerfile .
 
-script:
-  - docker run -e CI=true indrajithvgp/react-nginx npm run test
+# script:
+#   - docker run -e CI=true indrajithvgp/react-nginx npm run test
 
 
 deploy: 
