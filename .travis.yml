@@ -9,3 +9,8 @@ before_install:
 script:
   - docker run -e CI=true indrajithvgp/react-nginx npm run test
 
+languages: generic
+
+deploy: 
+  provider: elasticbeanstalk
+  region: "us-east-2"
